@@ -1,38 +1,11 @@
-# create-svelte
+# Terrible Receipt
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Welcome! This is a hastily-made app to print out receipts of all the terrible ideas you could
+possibly dream up.
 
-## Creating a project
+To launch your own version of this tool:
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. Get an OpenAI account and get an API key.
+2. Deploy to Netlify using the button below.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hexacubist/terrible-receipt)
