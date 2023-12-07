@@ -6,7 +6,6 @@ import OpenAI from 'openai';
 
 export const GET: RequestHandler = async ({ url, request }) => {
 	// Get OpenAI
-	console.log(env);
 	const openai = new OpenAI({
 		apiKey: env.OPENAI_KEY,
 		organization: env.OPENAI_ORG

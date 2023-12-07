@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-netlify": "^2.0.8",
 		"@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
 		"escpos-buffer": "^4.1.0",
 		"openai": "^4.20.1",
