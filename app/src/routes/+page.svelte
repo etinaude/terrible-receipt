@@ -65,19 +65,15 @@
 />
 
 <main class="receipt receipt-after">
-	<h1>Terrible Receipt Printer</h1>
-	<p>
-		Welcome! This is a hastily-made app to print out receipts of all the terrible ideas you could
-		possibly dream up. View the source here:
-		<a href="https://github.com/hexacubist/terrible-receipt" target="_blank"
-			>hexacubist/terrible-receipt</a
-		>
+	<h1>Terrible Idea Generator</h1>
+	<p class="balance">
+		Welcome to the Terrible Idea Generator! Press the button below to print a terrible idea. You can
+		also press "B" or "PageDown" to print an idea.
 	</p>
 	{#if loaded}
 		<div in:fade>
-			<p class="text-center font-bold mt-3">Press "B" or "PageDown" to print an idea!</p>
 			<button class="mx-auto block text-center mt-2 bg-green-600" on:click={() => print()}
-				>Or, click here!</button
+				>Generate an idea</button
 			>
 		</div>
 	{:else}
@@ -118,8 +114,10 @@
 	h1 {
 		@apply mb-4 text-center text-4xl font-bold;
 	}
-	a {
-		@apply text-blue-600 underline;
+	.balance {
+		/* Balance break */
+		@apply text-center;
+		text-wrap: balance;
 	}
 	.receipt {
 		@apply m-4 mx-auto w-full max-w-prose rounded bg-white px-7 py-6 drop-shadow-md;
