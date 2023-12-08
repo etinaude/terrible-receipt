@@ -56,7 +56,7 @@ export const GET: RequestHandler = async ({ url, request }) => {
 Come up with a 140 character unhinged idea for a thing that could be made in four days by a clever person. The idea could satirize an existing field or topic such as tech, science, art, writing, etc, or it could lean into absurdism.
 
 Ideas can be up to PG-13. Your response should be at most 140 characters and not include a name or any formatting. It should be original, not drawing from existing projects.
-						
+
 Projects could be physical, digital, written, or some other form of art. This project is: ${project_type} and involves ${tech_amount}.
 
 IMPORTANT: the idea should be TERRIBLE! Silly, reckless, and unhinged.
@@ -110,7 +110,7 @@ Here are some examples of previous ideas:
 				]
 			}
 		],
-		model: 'gpt-4-1106-preview',
+		model: 'gpt-3.5-turbo',
 		max_tokens: 256
 	});
 
